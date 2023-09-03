@@ -1,45 +1,44 @@
-<ion-header [translucent]="true">
-    <ion-toolbar color="primary
-">
+<ion-header>
+
+    <ion-toolbar color="primary">
         <ion-title>Login</ion-title>
     </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
-
-
-
     <form [formGroup]="formularioLogin">
         <ion-card>
             <ion-card-header>
-                <ion-card-title>Duoc UC</ion-card-title>
+                <ion-card-title>Duoc UC logo</ion-card-title>
             </ion-card-header>
         </ion-card>
-
-
+        <br>
         <ion-item>
-            <ion-label position="floating">Nombre</ion-label>
-            <ion-input formControlName="nombre"></ion-input>
+            <ion-label position="stacked">Usuario</ion-label>
+            <ion-input formControlName="nombre" placeholder="Escriba su usuario"></ion-input>
         </ion-item>
         <ion-item>
-            <ion-label position="floating">contraseña</ion-label>
-            <ion-input formControlName="password" type="password"></ion-input>
+            <ion-label position="stacked">Contraseña</ion-label>
+            <ion-input formControlName="password" type="password" placeholder="Escriba contraseña"></ion-input>
         </ion-item>
     </form>
-    <br>
+
     <ion-button>
         ingresar
     </ion-button>
-
 </ion-content>
 <ion-footer>
+
     <ion-toolbar colo="primary">
+        <ion-button [routerLink]="['/creador']">
+            registro
+        </ion-button>
+
         <ion-button slot="end">
             <ion-button [routerLink]="['/register']">
                 reestablecer contraseña
             </ion-button>
         </ion-button>
-
-
     </ion-toolbar>
 </ion-footer>

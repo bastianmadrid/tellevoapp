@@ -1,16 +1,13 @@
 <ion-header>
     <ion-toolbar color="primary">
-        <ion-buttons slot="start">
-            <ion-back-button></ion-back-button>
-        </ion-buttons>
+
+
+
         <ion-title>Restrablecer</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-
-
     <form>
         <ion-card>
             <ion-card-header>
@@ -26,11 +23,15 @@
 
     </form>
     <br>
-    <ion-button>
+    <ion-button [routerLink]="['/login']">
         Recuperar
     </ion-button>
 
+
 </ion-content>
 <ion-footer>
+    <ion-button [routerLink]="['/login']">
+        Recuperar
+    </ion-button>
 
 </ion-footer>
