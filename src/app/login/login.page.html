@@ -7,7 +7,16 @@
 
 <ion-content>
 
+
+
     <form [formGroup]="formularioLogin">
+        <ion-card>
+            <ion-card-header>
+                <ion-card-title>Duoc UC</ion-card-title>
+            </ion-card-header>
+        </ion-card>
+
+
         <ion-item>
             <ion-label position="floating">Nombre</ion-label>
             <ion-input formControlName="nombre"></ion-input>
@@ -17,4 +26,20 @@
             <ion-input formControlName="password" type="password"></ion-input>
         </ion-item>
     </form>
+    <br>
+    <ion-button>
+        ingresar
+    </ion-button>
+
 </ion-content>
+<ion-footer>
+    <ion-toolbar colo="primary">
+        <ion-button slot="end">
+            <ion-button [routerLink]="['/register']">
+                reestablecer contraseña
+            </ion-button>
+        </ion-button>
+
+
+    </ion-toolbar>
+</ion-footer>
